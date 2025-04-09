@@ -2,18 +2,18 @@
 
 require '../../main.inc.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/admin.lib.php';
-require_once DOL_DOCUMENT_ROOT.'/custom/carteiradecliente/class/cliente.class.php';
-require_once DOL_DOCUMENT_ROOT.'/custom/carteiradecliente/class/interacao.class.php';
+require_once DOL_DOCUMENT_ROOT.'/custom/carteiracliente/class/cliente.class.php';
+require_once DOL_DOCUMENT_ROOT.'/custom/carteiracliente/class/interacao.class.php';
 
-$langs->load("carteiradecliente@carteiradecliente");
+$langs->load("carteiracliente@carteiracliente");
 
 // Segurança do acesso
-//if (!$user->admin && empty($user->rights->carteiradecliente->read)) {
+//if (!$user->admin && empty($user->rights->carteiracliente->read)) {
 //    accessforbidden();
 //}
 
 // Cabeçalho do Dolibarr
-llxHeader('', $langs->trans("CarteiraDeCliente"));
+llxHeader('', $langs->trans("CarteiraCliente"));
 
 // Cards visuais com contadores
 print '<div class="container">';
@@ -48,10 +48,10 @@ print '</div>';
 print '<div style="margin-top: 20px;">';
 print '<h3>Atalhos rápidos</h3>';
 
-print '<a class="button" href="cliente_list.php?idmenu=54&mainmenu=carteiradecliente&leftmenu=">📋 Lista de Clientes</a> ';
-print '<a class="button" href="cliente_card.php?action=create&idmenu=55&mainmenu=carteiradecliente&leftmenu=">➕ Novo Cliente</a> ';
-print '<a class="button" href="interacao_list.php?idmenu=57&mainmenu=carteiradecliente&leftmenu=">💬 Lista de Interações</a> ';
-print '<a class="button" href="interacao_card.php?action=create&idmenu=58&mainmenu=carteiradecliente&leftmenu=">➕ Nova Interação</a> ';
+print '<a class="button" href="cliente_list.php?idmenu=54&mainmenu=carteiracliente&leftmenu=">📋 Lista de Clientes</a> ';
+print '<a class="button" href="cliente_card.php?action=create&idmenu=55&mainmenu=carteiracliente&leftmenu=">➕ Novo Cliente</a> ';
+print '<a class="button" href="interacao_list.php?idmenu=57&mainmenu=carteiracliente&leftmenu=">💬 Lista de Interações</a> ';
+print '<a class="button" href="interacao_card.php?action=create&idmenu=58&mainmenu=carteiracliente&leftmenu=">➕ Nova Interação</a> ';
 
 print '</div>';
 
